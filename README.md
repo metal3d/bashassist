@@ -12,9 +12,10 @@ Then press `CTRL+x CTRL+o` (to be faster, keep `CTRL` pressed and then press `x`
 
 And wait a few seconds for the AI to generate the command. The command is ready to use.
 
-<video src="./misc/demo.mp4" autoplay loop muted controls width="100%">
-  <p>Video not supported</p>
-</video>
+
+<video src="https://github.com/user-attachments/assets/a2cdd8c2-4a13-43bc-adba-bac7f12e8e51"></video>
+
+
 
 ## Requirements
 
