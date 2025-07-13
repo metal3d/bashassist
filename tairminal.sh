@@ -2,7 +2,7 @@
 __TAIRMINAL_OLLAMA_API=http://localhost:11434/api/generate
 __TAIRMINAL_OLLAMA_MODEL="gemma3n:e4b"
 
-# if Using explanations
+# if Using pollinations
 __TAIRMINAL_POLLINATIONS_API=https://text.pollinations.ai
 
 # System prompt to avoid any interpretation of the command
