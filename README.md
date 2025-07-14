@@ -1,6 +1,6 @@
-# tAIrminal - give terminal commands some neurons
+# bashAssist - give terminal commands some neurons
 
-tAIrminal is a very simple "addon" to your command line that allows you to use
+bashAssist is a very simple "add-on" for bash that allows you to use
 an AI (LLM) to generate terminal commands based on natural language or to ask AI
 for general information.
 
@@ -8,7 +8,7 @@ By default, it is configured to use [Pollinations](https://pollinations.ai/) API
 You can also use [ollama](https://ollama.com/) to run LLMs locally. For example, using
 the very tiny `gemma3n:e2b` or `gemma3n:e4b` can be very effective. Of course, you can use any other model.
 
-When the addon is active, you only have to type "#" (like writing a comment) and then your natural language question.
+When the add-on is active, you only have to type "#" (like writing a comment) and then your natural language question.
 Then press `CTRL+x CTRL+o` (to be faster, keep `CTRL` pressed and then press `x` then `o`) to send the command to the AI.
 
 If you want to ask a simple question, just use the "`ask`" command, for example:
@@ -46,39 +46,51 @@ Then proceed to the test/installation section.
 
 ## Test
 
-Before installing tAIrminal, you can test it directly in your terminal by running the following command:
+Before installing bashAssist, you can test it directly in your terminal by running the following command:
 
 ```bash
-source <(curl -s https://raw.githubusercontent.com/metal3d/tairminal/main/tairminal.sh)
+source <(curl -s https://raw.githubusercontent.com/metal3d/bashAssist/main/bashassist.sh)
 ```
 
 Then type `#` followed by your question and press `CTRL+x CTRL+o` to see how it works.
 
 ## Installation
 
-Copy the `tairminal.sh` script inside your `~/.bashrc.d` directory and ensure that it is sourced by your `~/.bashrc` file.
+Copy the `bashassist.sh` script inside your `~/.bashrc.d` directory and ensure that it is sourced by your `~/.bashrc` file.
 
 In many modern Linux distributions, this is already done by default. If not, you can add the following line to your `~/.bashrc`:
 
 ```bash
-source ~/.bashrc.d/tairminal.sh
+source ~/.bashrc.d/bashassist.sh
+```
+
+Or you can adapt your `~/.bashrc` file to `source` every script in the `~/.bashrc.d` directory by adding the following lines:
+
+```bash
+if [ -d "$HOME/.bashrc.d" ]; then
+    for script in "$HOME/.bashrc.d/"*.sh; do
+        if [ -f "$script" ]; then
+            source "$script"
+        fi
+    done
+fi
 ```
 
 ## Configuration
 
-tAIrminal checks these files in this order:
+bashAssist checks these files in this order:
 
-- `$HOME/.local/share/tairminal/config`
-- `$HOME/.config/tairminal/config`
+- `$HOME/.local/share/bashassist/config`
+- `$HOME/.config/bashassist/config`
 
-You may add the following lines to your configuration file to customize the behavior of tAIrminal (given values are the default):
+You may add the following lines to your configuration file to customize the behavior of bashAssist (given values are the default):
 
 ```bash
 ENGINE="pollinations" # or "ollama"
 SHORTCUT="\C-x\C-o" # the shortcut to send the command to the AI (readline format)
 OLLAMA_MODEL="gemma3n:e2b" # or any other model you have installed
 OLLAMA_URL="http://localhost:11434" # or any other URL where ollama is running
-SHOW_INFO=true # display the information message in comment
+SHOW_INFO=false # display the information message in comment
 # the system prompt for the AI, I recommend to keep it as is
 SYSTEM="You must answer only with the raw Bash command that solves
 the user's request. Do not include any explanations, comments, or formatting
