@@ -19,7 +19,11 @@ ai "Who is Linux Torvalds?"
 
 And wait a few seconds for the AI to generate the command. The command is ready to use.
 
-<video src="https://github.com/user-attachments/assets/a2cdd8c2-4a13-43bc-adba-bac7f12e8e51" autoload autoplay controls loop></video>
+
+
+<video src="https://github.com/user-attachments/assets/ddc1e0b5-5e62-418d-8afe-bcbebea58091" loop controls autoplay></video>
+
+
 
 ## Requirements
 
