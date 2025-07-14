@@ -19,9 +19,9 @@ ai "Who is Linux Torvalds?"
 
 And wait a few seconds for the AI to generate the command. The command is ready to use.
 
+<video src="https://github.com/user-attachments/assets/cbffb703-08ac-463c-b22d-ee93f0bc7986" loop controls autoplay title="bashAssist in action"></video>
 
 
-<video src="https://github.com/user-attachments/assets/ddc1e0b5-5e62-418d-8afe-bcbebea58091" loop controls autoplay></video>
 
 
 
