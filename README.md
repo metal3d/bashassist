@@ -1,7 +1,8 @@
 # tAIrminal - give terminal commands some neurons
 
 tAIrminal is a very simple "addon" to your command line that allows you to use
-an AI (LLM) to generate terminal commands based on natural language.
+an AI (LLM) to generate terminal commands based on natural language or to ask AI
+for general information.
 
 By default, it is configured to use [Pollinations](https://pollinations.ai/) API, a free to use endpoint.
 You can also use [ollama](https://ollama.com/) to run LLMs locally. For example, using
@@ -10,9 +11,15 @@ the very tiny `gemma3n:e2b` or `gemma3n:e4b` can be very effective. Of course, y
 When the addon is active, you only have to type "#" (like writing a comment) and then your natural language question.
 Then press `CTRL+x CTRL+o` (to be faster, keep `CTRL` pressed and then press `x` then `o`) to send the command to the AI.
 
+If you want to ask a simple question, just use the "`ask`" command, for example:
+
+```bash
+ai "Who is Linux Torvalds?"
+```
+
 And wait a few seconds for the AI to generate the command. The command is ready to use.
 
-<video src="https://github.com/user-attachments/assets/a2cdd8c2-4a13-43bc-adba-bac7f12e8e51"></video>
+<video src="https://github.com/user-attachments/assets/a2cdd8c2-4a13-43bc-adba-bac7f12e8e51" autoload autoplay controls loop></video>
 
 ## Requirements
 
@@ -20,7 +27,7 @@ You need 2 command line tools:
 
 - [HTTPie](https://httpie.io/) (I currently don't support `curl` as Httpie helps a lot to send
   JSON data, URL encoding, etc.)
-- [jq](https://jqlang.org/) or [yq](https://github.com/mikefarah/yq)
+- [yq](https://github.com/mikefarah/yq) or [jq](https://jqlang.org/) command line. `yq` is preferred.
 
 You may be able to install them with your package manager, for example:
 
@@ -42,7 +49,7 @@ Then proceed to the test/installation section.
 Before installing tAIrminal, you can test it directly in your terminal by running the following command:
 
 ```bash
-curl -s https://raw.githubusercontent.com/metal3d/tairminal/main/tairminal.sh | bash
+source <(curl -s https://raw.githubusercontent.com/metal3d/tairminal/main/tairminal.sh)
 ```
 
 Then type `#` followed by your question and press `CTRL+x CTRL+o` to see how it works.
