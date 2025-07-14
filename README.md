@@ -12,10 +12,7 @@ Then press `CTRL+x CTRL+o` (to be faster, keep `CTRL` pressed and then press `x`
 
 And wait a few seconds for the AI to generate the command. The command is ready to use.
 
-
 <video src="https://github.com/user-attachments/assets/a2cdd8c2-4a13-43bc-adba-bac7f12e8e51"></video>
-
-
 
 ## Requirements
 
@@ -71,6 +68,7 @@ You may add the following lines to your configuration file to customize the beha
 
 ```bash
 ENGINE="pollinations" # or "ollama"
+SHORTCUT="\C-x\C-o" # the shortcut to send the command to the AI (readline format)
 OLLAMA_MODEL="gemma3n:e2b" # or any other model you have installed
 OLLAMA_URL="http://localhost:11434" # or any other URL where ollama is running
 SYSTEM="You must answer only with the raw Bash command \
