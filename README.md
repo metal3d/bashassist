@@ -83,7 +83,8 @@ bashAssist checks these files in this order:
 - `$HOME/.local/share/bashassist/config`
 - `$HOME/.config/bashassist/config`
 
-You may add the following lines to your configuration file to customize the behavior of bashAssist (given values are the default):
+You may add the following lines to your configuration file to customize the behavior of bashAssist (given values are
+the default):
 
 ```bash
 ENGINE="pollinations" # or "ollama"
