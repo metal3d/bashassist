@@ -10,7 +10,7 @@ the very tiny `gemma3n:e2b` or `gemma3n:e4b` can be very effective. Of course, y
 
 > Using Pollinations API, we force the "private" mode to not display your prompt in
 > the public feed. But, keep in mind that your prompts are sent through internet, to a LLM provider.
-> I prefer using local LLM using Ollama with a tiny model.
+> I prefer using local LLM using Ollama with a tiny model. [See the wiki page to save time](https://github.com/metal3d/bashassist/wiki/Local-Ollama-container-with-Podman)
 
 When the add-on is active, you only have to type "#" (like writing a comment) and then your natural language question.
 **Do not press `Enter`**, press `CTRL+x CTRL+o` (to be faster, keep `CTRL` pressed and then press `x` then `o`) to send 
