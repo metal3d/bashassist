@@ -7,7 +7,11 @@ __TAIRMINAL_POLLINATIONS_API=https://text.pollinations.ai
 
 # System prompt to avoid any interpretation of the command
 # we only want the raw command to be returned
-__TAIRMINAL_SYSTEM="You must answer only with the raw Bash command that solves the user's request. Do not include any explanations, comments, or formatting (no backticks, no Markdown, no code block). Respond with the command only, as if to paste it directly in the terminal. No line breaks, no quotes, no prefix, no trailing punctuation."
+__TAIRMINAL_SYSTEM="You must answer only with the raw Bash command that solves 
+the user's request. Do not include any explanations, comments, or formatting 
+(no backticks, no Markdown, no code block). Respond with the command only, as 
+if to paste it directly in the terminal. No line breaks, no quotes, no prefix, 
+no trailing punctuation."
 
 # choose the API to use
 # - pollination is free, thanks to them https://pollinations.ai/

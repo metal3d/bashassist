@@ -71,13 +71,13 @@ ENGINE="pollinations" # or "ollama"
 SHORTCUT="\C-x\C-o" # the shortcut to send the command to the AI (readline format)
 OLLAMA_MODEL="gemma3n:e2b" # or any other model you have installed
 OLLAMA_URL="http://localhost:11434" # or any other URL where ollama is running
-SYSTEM="You must answer only with the raw Bash command \
-that solves the user's request. Do not include any \
-explanations, comments, or formatting (no backticks, \
-no Markdown, no code block). Respond with the command \
-only, as if to paste it directly in the terminal. No \
-line breaks, no quotes, no prefix, no trailing punctuation."
 SHOW_INFO=true # display the information message in comment
+# the system prompt for the AI, I recommend to keep it as is
+SYSTEM="You must answer only with the raw Bash command that solves
+the user's request. Do not include any explanations, comments, or formatting
+(no backticks, no Markdown, no code block). Respond with the command only, as
+if to paste it directly in the terminal. No line breaks, no quotes, no prefix,
+no trailing punctuation."
 ```
 
 You don't need to set all these variables, only the ones you want to change.
